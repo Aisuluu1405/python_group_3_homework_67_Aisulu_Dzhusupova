@@ -18,27 +18,6 @@ function renderData(data) {
     }
 }
 
-// function xhrParseData(event) {
-//     let xhr = event.target;
-//     console.log(xhr.response);
-//     console.log(xhr.status);
-//     if(xhr.status === 200) {
-//         data = JSON.parse(xhr.response);
-//         renderData(data)
-//     }
-//     else {
-//         console.log('error');
-//     }
-// }
-
-//
-// function xhrLoadIndex() {
-//     let xhr = new XMLHttpRequest();  //создает новый объект
-//     xhr.onload = parseData;
-//     xhr.open('GET', indexLink);
-//     xhr.send();
-// }
-
 function jqueryParseData(response, status) {
     console.log(response);
     console.log(status);

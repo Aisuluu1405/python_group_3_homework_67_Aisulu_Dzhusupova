@@ -39,12 +39,16 @@ function renderData(data) {
 	    border.text(data.borders[i])
         borders.append(border)
     }
-   
+    let current = $(document.createElement('p'));
+    let nameCurrent = data.currencies;
+    current.text('Current name: '+ nameCurrent[0]['name']);
+    current.append(nameCurrent);
+
     let nativeName = $(document.createElement('p'));
     nativeName.text('NativeName: ' + data.nativeName);
    
     countryDiv.append(country, region, subregion, 
-    	capital, population, area, borders, nativeName);
+    	capital, population, area, borders, current, nativeName);
     container.append(countryDiv);
 };
     
